@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Me A Coffee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        @font-face {
+            font-family: 'font';
+            src: url('font.ttf');
+        }
+        body{
+            font-family: 'font';
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            min-height: 100vh;
+            color: white;
+            background-image: linear-gradient(to top, rgb(0, 0, 44),rgb(177, 13, 122));
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 >Apoie o trabalho da mais mais!</h1>
+        <h2>Me compre um cafezinho cis☕</h2>
+        <div class="d-flex justify-content-center">
+        <div class="card" style="display:block;width: 18rem;margin-top: 5%;justify-content: center;">
+            <img src="img.png" class="card-img-top" >
+            <div class="card-body">
+                <button onclick="clicou()" class="btn btn-primary">Copiar</button>
+                <p class="card-text" style="display: none;margin-top: 5%;">Chave copiada com sucesso!🤗</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script>
+
+        function clicou(){
+            const copiada = document.getElementsByClassName("card-text")[0];
+            const chave = "00020126800014br.gov.bcb.pix0136015ce10c-1df8-47f2-bb34-f1dff31de7ee0218buy me a coffee <35204000053039865802BR5924Marta Maria de Abreu Gom6006Brasil62290525202509192257B6TCM6GNLELW86304458F";
+            navigator.clipboard.writeText(chave).then(() => {
+                copiada.style.display = 'block';
+            })
+            console.log("obrigadinhaa, dev! eu sei q vc é dev, pq está usando o devtools para ver isso!!bjsss");
+        }
+    </script>
+</body>
+</html>
